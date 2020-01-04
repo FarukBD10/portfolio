@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bootstrap portfolio</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  	.row {
+  		background-color: #555;
+  	}
+  	img {
+  		transition:transform .3s;
+  		padding:3px;
+  	}
+  	img:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2);
+   -o-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+  border-radius:1px;
+}
+  	.navbar {
+  		margin-bottom:0;
+  		border-radius:0;
+  		border:2px solid red;
+  	}
+  	.icon {
+  		background:red;
+  	}
+  	.jumbotron{
+  		margin-bottom:0;
+  		background-image: url(images/FarukBD10.png);
+  		-webkit-background-size:90% 100%;
+  		background-position:center;
+  		height:250px;
+
+  	}
+  	#mywork {
+  		color:blue; 
+  		text-shadow: 2px 3px 1px red;
+
+  	}
+  	footer {
+  		background:black;
+  		padding:15px;
+  		color:white;
+  	}
+  	@media screen and (max-width:767px) {
+  		#mywork {
+  			margin: 0;
+  		}
+  		.jumbotron {
+  			margin-bottom:5px;
+  		}
+  	}
+  </style>
+
+</head>
+<nav class="navbar bg-info navbar-white fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar icon"></span>
+				<span class="icon-bar icon"></span>
+				<span class="icon-bar icon"></span>
+			</button>
+			<a  class="navbar-brand" href="#">Portfolio BS-3</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="#">Contact</a></li>
+				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">More <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Previouse Work</a></li>
+						<li><a href="#">Exprience</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Certificate</a></li>
+					</ul></li>
+			</ul>
+			<ul  class="nav navbar-nav navbar-right navbar-dark">
+				<li><a href="#"> <span  class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			</ul>
+		</div>
+	</div>
+	
+</nav>
+
+<div class="jumbotron" style="/*background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);*/ ">
+
+	<!-- <div class="container text-center" style="">
+		<h2 style="color:blue; text-shadow: 3px 4px 1px grey;"><strong> My Portfolio</strong></h2>
+		<P style="color:white; text-shadow:2px 3px 1px blue;"><strong>I am Web devoloper, i can  web-design, and devoloping,<br>You can hire me any type web relative jobs <br>Hire Me </strong></P>
+	</div> -->
+</div>	
+
+<div class="container-fluid bg-3 allcontainer">
+	<h2 class="text-center" id="mywork"><strong> Photos are using Bootstrap Grid Layout </strong> </h2>
+	<h3 style="text-shadow:2px 3px 1px blue;color:red; "> <strong>&nbsp;  Photos from sa / Put the cursor on those photos and see all photos are hover  </strong></h3>
+		<hr style="height: 1px; background-color:blue;">
+	<div class="row">
+		<div class="col-sm-3">
+			
+			<img src="images/img2.jpeg" class="img-responsive img-circle" style="width:100%; height:400px;" alt="sunfllower">
+		</div>
+		<div class="col-sm-3">
+			
+			<img src="images/img4.jpeg" class="img-responsive" style="width:100%; height:400px;" alt="sunfllower">
+		</div>	
+		<div class="col-sm-3">
+			
+			<img src="images/img5.jpeg" class="img-responsive" style="width:100%; height:400px;" alt="sunfllower">
+		</div>	
+		<div class="col-sm-3">
+			
+			<img src="images/img6.jpeg" class="img-responsive img-circle" style="width:100%; height:400px;" alt="sunfllower">
+		</div>		
+	</div>
+</div><br>
+<div class="container-fluid bg-3">
+	<h3 style="text-shadow:2px 3px 1px blue;color:red; "> <strong>&nbsp;  Photos from fa sa </strong></h3>
+		<hr style="height: 1px; background-color:red;">
+	<div class="row">
+		
+		<div class="col-sm-3">
+			<img src="images/img7.jpeg" class="img-fluid img-circle" style="width:100%; height:400px" alt="baby picture" >
+		</div>
+		<div class="col-sm-3">
+			<img src="images/img8.jpeg" class="img-responsive" style="width:100%; height:400px" alt="baby picture" >
+		</div>
+		<div class="col-sm-3">
+			<img src="images/img9.jpeg" class="img-responsive" style="width:100%; height:400px" alt="baby picture" >
+		</div>
+		<div class="col-sm-3">
+			<img src="images/img10.jpeg" class="img-responsive img-circle" style="width:100%; height:400px" alt="baby picture" >
+		</div>
+	</div>
+</div><br><br>
+
+<footer class="container-fluid text-center">
+	<p>all copy right reserve</p>
+</footer>
+	
+					
+
+</body>
+</html>
